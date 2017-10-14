@@ -1,0 +1,31 @@
+{
+  "name": "bookstore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express":"*",
+    "body-parser":"*",
+    "mongoose":"*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfcandan/Bookstore.git"
+  },
+  "keywords": [
+    "book",
+    "store",
+    "nodejs",
+    "mongo",
+    "mongoose"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mfcandan/Bookstore/issues"
+  },
+  "homepage": "https://github.com/mfcandan/Bookstore#readme"
+}
