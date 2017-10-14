@@ -1,13 +1,13 @@
 var mongoose = require('mongoose');
 
 var bookSchema = mongoose.Schema({
-    name:{
-        title: String,
+    title:{
+        type: String,
         required: true
     },
     genre:{
         type: String,
-        requird: true
+        required: true
     },
     description:{
         type: String
@@ -19,7 +19,7 @@ var bookSchema = mongoose.Schema({
     publiher:{
         type: String
     },
-    publiher:{
+    pages:{
         type: String
     },
     image_url:{
@@ -36,6 +36,10 @@ var bookSchema = mongoose.Schema({
 
 var book = module.exports = mongoose.model('Book', bookSchema);
 
-module.exports.getGenres = function(callback, limit){
+module.exports.getBooks = function(callback, limit){
     Book.find(callback).limit(limit ); 
+}
+
+module.exports.getBookById = function(id, callback){
+    Book.findById(id, callback); 
 }
